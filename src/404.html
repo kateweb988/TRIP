@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="robots" content="noindex">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>ExtremeFamilyTrip</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.css">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="body-wrap page">
+		<header class="header" id="header">
+			<nav class="nav">
+				<div class="container">
+					<div class="nav__box d-flex">
+						<a href="main.html" class="nav__logo">
+							<img src="/img/logo.svg" alt="">
+						</a>
+						<ul class="nav__list d-flex">
+							<li>
+								<a href="main.html#date">
+									Расписание
+								</a>
+							</li>
+							<li>
+								<a href="main.html#video">
+									Видеоролики
+								</a>
+							</li>
+							<li>
+								<a href="main.html#team">
+									Команда
+								</a>
+							</li>
+							<li>
+								<a href="main.html#faq">
+									FAQ
+								</a>
+							</li>
+							<li>
+								<a href="main.html#rev">
+									Отзывы
+								</a>
+							</li>
+							<li>
+								<a href="main.html#order">
+									Контакты
+								</a>
+							</li>
+						</ul>
+						<div class="nav__content d-flex">
+							<div class="nav__socials d-flex">
+								<a href="#" class="nav__link">
+									<img src="/img/a1.svg" alt="" class="svg">
+								</a>
+								<a href="#" class="nav__link">
+									<img src="/img/a2.svg" alt="" class="svg">
+								</a>
+								<a href="#" class="nav__link">
+									<img src="/img/a3.svg" alt="" class="svg">
+								</a>
+							</div>
+							<a href="tel:+79150681804" class="nav__tel">
+								+7 915 068-18-04
+							</a>
+							<a href="#" class="nav__btn btn">
+								<p>
+									Связаться с нами
+								</p>
+								<img src="/img/btn-arr.svg" alt="" class="svg">
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="menu-btn" id="menu-btn">
+			</div>
+			<div class="menu">
+				<ul class="nav__list">
+					<li>
+						<a href="#date" class="go_to">
+							Расписание
+						</a>
+					</li>
+					<li>
+						<a href="#video" class="go_to">
+							Видеоролики
+						</a>
+					</li>
+					<li>
+						<a href="#team" class="go_to">
+							Команда
+						</a>
+					</li>
+					<li>
+						<a href="#faq" class="go_to">
+							FAQ
+						</a>
+					</li>
+					<li>
+						<a href="#rev" class="go_to">
+							Отзывы
+						</a>
+					</li>
+					<li>
+						<a href="#order" class="go_to">
+							Контакты
+						</a>
+					</li>
+				</ul>
+				<div class="burger__block">
+					<a href="tel:+79150681804" class="nav__tel">
+						+7 915 068-18-04
+					</a>
+				</div>
+				<div class="burger__socials d-flex">
+					<a href="#" target="blank">
+						<img src="/img/b1.svg" alt="">
+					</a>
+					<a href="#" target="blank">
+						<img src="/img/b2.svg" alt="">
+					</a>
+					<a href="#" target="blank">
+						<img src="/img/b3.svg" alt="">
+					</a>
+				</div>
+				<a href="#" class="order__button btn d-flex" data-submit>
+					<img src="/img/btn-right.svg" alt="" class="svg">
+					<p>
+						Свзязаться с нами
+					</p>
+				</a>
+			</div>
+		</header>
+		<section class="error" id="error">
+			<div class="container">
+				<div class="error__box">
+					<picture class="error__pic">
+						<source srcset="/img/404.svg" media="(max-width: 600px)">
+						<img src="/img/404.svg" alt="">
+					</picture>
+					<p class="error__name">
+						ошибка СТРАНИЦЫ - 404
+					</p>
+					<p class="error__text">
+						такой маршрут не найден <br class="mob"> или <span>завален камнями</span>
+					</p>
+					<a href="main.html" class="error__btn btn">
+						<p>
+							На главную
+						</p>
+						<img src="/img/btn-arr.svg" alt="" class="svg">
+					</a>
+				</div>
+			</div>
+		</section>
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__box d-flex">
+					<div class="footer__left d-flex">
+						<img src="/img/logo.svg" alt="" class="footer__logo">
+						<p>
+							ИП Захаров <br>
+							С. А.ОГРНИП: 319508100034533 <br>
+							ИНН: 501707486912
+						</p>
+					</div>
+					<div class="footer__info d-flex">
+						<img src="/img/ava.png" alt="" class="footer__ava">
+						<div class="footer__content">
+							<p class="footer__el">
+								Онлайн-поддержка
+							</p>
+							<p class="footer__name">
+								Марина Гатикоева
+							</p>
+						</div>
+					</div>
+					<div class="footer__right">
+						<a href="tel:+79150681804" class="footer__tel">
+							+7 915 068-18-04
+						</a>
+						<a href="mailto:pohod@.ru" class="footer__mail">
+							pohod@.ru
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="footer__flex d-flex">
+						<div class="footer__socials d-flex">
+							<a href="#" class="footer__link" target="blank">
+								<img src="/img/f1.svg" alt="">
+							</a>
+							<a href="#" class="footer__link" target="blank">
+								<img src="/img/f2.svg" alt="">
+							</a>
+							<a href="#" class="footer__link" target="blank">
+								<img src="/img/f3.svg" alt="">
+							</a>
+						</div>
+						<div class="footer__com d-flex">
+							<p>
+								Сайт разработан в студии
+							</p>
+							<a href="https://gasfort.ru/" target="blank">
+								<img src="/img/com.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div style="display:none;">
+		<div class="box-modal" id="popup-call">
+			<div class="popup-call__box">
+				<div class="popup__wrap">
+					<p class="popup__title">
+						Оставь контакт - и мы ответим <br>
+						<span>
+							на любой вопрос!</span>
+					</p>
+					<form action="/success1.php" class="order__form js-form1" id="popupResult" method="post">
+						<div class="order__item">
+							<p class="order__name">
+								Выберите удобный способ связи
+							</p>
+							<div class="order__flex d-flex">
+								<div class="order__el">
+									<input class="form-check-input custom-checkbox" type="radio" name="t2" id="form11"
+										value="Профессиональные">
+									<label class="form-check-label " for="form11">
+										<img src="/img/o1.svg" alt="" class="svg">
+										Телефон
+									</label>
+								</div>
+								<div class="order__el">
+									<input class="form-check-input custom-checkbox" type="radio" name="t2" id="form22"
+										value="Полупрофессиональные">
+									<label class="form-check-label " for="form22">
+										<img src="/img/o2.svg" alt="" class="svg">
+										WhatsApp
+									</label>
+								</div>
+								<div class="order__el">
+									<input class="form-check-input custom-checkbox" type="radio" name="t2" id="form33"
+										value="Любительские">
+									<label class="form-check-label " for="form33">
+										<img src="/img/o3.svg" alt="" class="svg">
+										Telegram
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="order__item">
+							<p class="order__name">
+								Введите номер
+							</p>
+							<div class="order__row d-flex">
+								<input type="tel" name="tel" required="" placeholder="+7 (999)-974-01-44"
+									class="order__input tel form__field">
+								<input type="submit" class="order__button btn d-flex" value="Отправить заявку" data-submit1>
+							</div>
+							<p class="order__info">
+								Оставляя заявку вы соглашаетесь с нашей <a href="#">Политикой конфедициальности</a>
+							</p>
+						</div>
+					</form>
+					<div class="box-modal__close articmodal-close">
+						<div class="btn btn_2">
+							<p>
+								Закрыть
+							</p>
+							<img src="/img/close.svg" alt="" class="svg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display:none;">
+		<div class="box-modal" id="popup-thank">
+			<div class="popup-call__box">
+				<div class="popup__wrap">
+					<p class="popup__title">
+						ВСЕ ХОРОШО, спасибо, скоро <br>
+						с <span> вами свяжемся</span>
+					</p>
+					<div class="box-modal__close articmodal-close">
+						<div class="btn">
+							<p>
+								Закрыть
+							</p>
+							<img src="/img/close.svg" alt="" class="svg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/all.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.js"></script>
+</body>
+
+</html>

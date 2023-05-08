@@ -1,0 +1,163 @@
+body
+   font-family: 'HelveticaNeueCyr'
+   background: #F9FAF7
+   font-weight: 400
+   font-size: 16px
+   line-height: 120%
+   color: #000000
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $green
+.container
+   padding: 0 15px
+   max-width: 1541px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px !important
+   @media (max-width: 991px)
+      max-width: 720px !important
+   @media (max-width: 767px)
+      max-width: 540px !important
+.d-flex
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   margin: 0
+   color: white
+   font-style: normal
+   font-weight: 900
+   font-size: 100px
+   line-height: 112px
+   text-transform: uppercase
+   &::first-letter
+      color: $green
+h2 
+   margin: 0
+   font-weight: 900
+   font-size: 52px
+   line-height: 72px
+   text-transform: uppercase
+   &::first-letter
+      color: $green
+h3 
+   font-weight: 700
+   font-size: 22px
+   line-height: 150%
+   color: #000000
+   margin: 0
+   font-family: 'Segoe UI'
+   &::first-letter
+      color: $green
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg 
+   transition: 0.5s ease
+a
+   transition: 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $green !important
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   color: white
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $green !important
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path, circle
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $green
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 4px
+   width: 4px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $green
+   border-radius: 6px
+.btn 
+   display: flex
+   align-items: flex-start
+   justify-content: space-between
+   width: 215px
+   height: 79px
+   background: $green
+   padding: 16px 14px 9px 18px
+   border: 3px solid $green
+   p 
+      font-weight: 500
+      font-size: 17px
+      line-height: 23px
+      color: #2A2D32
+      margin-top: auto
+      transition: 0.5s
+   &:hover 
+      background: transparent
+   &:active
+      background: #AAC005
+      border: 3px solid #AAC005
+   &:disabled
+      background: #DDDDDD
+      border: 3px solid #DDDDDD
+   &_2
+      width: 215px
+      height: 79px
+      transition: 0.5s
+      background: transparent
+      p
+         color: $green
+      path 
+         fill: $green
+      &:hover 
+         background: $green
+         p 
+            color: #2A2D32 !important
+         .svg 
+            path 
+               fill: #2A2D32 !important
+label.error
+   display: none !important
+input.error 
+   padding: 0 0 0 21px !important
+   border: 1px solid red !important
